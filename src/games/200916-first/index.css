@@ -1,7 +1,32 @@
 :root {
   --bg: #242424;
+  --button-thickness: 0.2rem;
+  --button-height: 2rem;
+  --lift: 0.05rem;
 }
 
 body {
   background-color: var(--bg);
+}
+
+button {
+  position: relative;
+  margin: 50px;
+  padding: 0px 60px;
+  height: var(--button-height);
+  border-radius: 0.5rem;
+  border: 0;
+  color: white;
+  background-color: #4d7085;
+  box-shadow: 0px calc(-1 * var(--button-thickness)) inset #314653;
+}
+
+button:hover {
+  filter: brightness(1.2);
+}
+
+button:active {
+  top: 5px;
+  box-shadow: none;
+  height: calc(var(--button-height) - var(--button-thickness));
 }

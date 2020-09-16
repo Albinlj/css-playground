@@ -4,7 +4,7 @@ import "./index.css";
 export const First = (props) => {
   return (
     <div>
-      <p>Hejz</p>
+      <button>Click Me</button>
     </div>
   );
 };
